@@ -30,7 +30,7 @@ Autor: Patryk Białek (patryk.b@me.com)
 Wsparcie przeglądarek Chrome, FireFox, MS Edge, MS InternetExplorer 11
 
 
-***Czego tutaj nie ma:***
+**Czego tutaj nie ma:**
 
 - Nie został ostylowany komponent Kalendarza. Aby to zrobić muszę mieć informację od developera jaka biblioteka do kalendarza będzie finalnie wykorzystana
 - Opcja widoku mapy zawiera jedynie ostylowane PINy Parku (do nałożenia póżniej podczas implementacji biblioteki mapy)
