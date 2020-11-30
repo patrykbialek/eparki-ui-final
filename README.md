@@ -46,15 +46,15 @@ Wsparcie przeglądarek Chrome, FireFox, MS Edge, MS InternetExplorer 11
 
 ## Widoki
 
-W katalogu `html` znajdują się wszystkie widoki w formacie `html`.
+W katalogu `html` znajdują się wszystkie widoki w formacie `.html`.
 
 &nbsp;
 
 ## Style
 
 W katalogu `styles` znajdują się pliki stylów:
-- css oraz min.css - skompilowany plik `css`
-- scss - nieskompilowane pliki developerskie
+- css oraz min.css - skompilowany plik `.css`
+- scss - nieskompilowane pliki developerskie w formacie `.scss`
 
 &nbsp;
 
