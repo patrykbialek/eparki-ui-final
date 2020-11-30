@@ -3,7 +3,7 @@
 ## Projekt UI
 
 ```
-Aktualizacja: 30/11/2020 22:00<br>
+Aktualizacja: 30/11/2020 22:00
 Autor: Patryk Białek (patryk.b@me.com)
 ```
 
