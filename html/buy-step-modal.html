@@ -1,0 +1,150 @@
+<!--// Buy-step modal -->
+<div class="modal fade" id="buyStepModal" tabindex="-1" role="dialog" aria-labelledby="buyStepModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="countryRegion">Dokończ zakup</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <span class="icon-close"></span>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="c-profile">
+          <section class="" id="form-buy">
+            <ul class="nav nav-pills mb-3 c-profile-nav d-flex justify-content-around" id="pills-tab" role="tablist">
+              <li class="nav-item c-profile-nav__item">
+                <a class="nav-link active c-profile-nav__link" id="pills-buy-login-tab" data-toggle="pill"
+                  href="#pills-buy-login" role="tab" aria-controls="pills-buy-login" aria-selected="true">Zaloguj
+                  się</a>
+              </li>
+              <li class="nav-item c-profile-nav__item">
+                <a class="nav-link c-profile-nav__link" id="pills-buy-without-login-tab" data-toggle="pill"
+                  href="#pills-buy-without-login" role="tab" aria-controls="pills-buy-without-login"
+                  aria-selected="false">Kup bez logowania</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent" style="height: 70vh; overflow: auto;">
+              <div class="tab-pane fade active show" id="pills-buy-login" role="tabpanel"
+                aria-labelledby="pills-buy-login-tab">
+                <form class="c-profile__form">
+                  <div class="d-flex flex-column mb-2">
+                    <div class="form-group">
+                      <label for="email">Adres e-mail</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Hasło</label>
+                      <div class="input-group mb-3">
+                        <input type="password" class="form-control" id="password">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="button">
+                            <span class="icon-visibility_on" style="display: none; color: #9E9E9E"></span>
+                            <span class="icon-visibility_off" style="display: block; color: #9E9E9E"></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" id="toggle-invoice-data" value="option1">
+                      <label class="form-check-label" for="toggle-invoice-data">
+                        Akceptuję regulamin serwisu</label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" id="toggle-invoice-data" value="option1">
+                      <label class="form-check-label" for="toggle-invoice-data">
+                        Potrzebuję fakturę</label>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div class="mb-3">
+                      <button type="button" class="btn btn-primary btn-lg btn-block">Zaloguj</button>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div class="mb-3">
+                        <button type="button" class="btn btn-light btn-lg btn-block c-profile__login-facebook">
+                          <img class="mr-2" src="https://patrykbialek.github.io/eparki-ui/assets/img/facebook_logo.png"
+                            alt="facebook_logo">
+                          <img src="https://patrykbialek.github.io/eparki-ui/assets/img/facebook_text.png"
+                            alt="facebook_text">
+                        </button>
+                      </div>
+                      <div class="mb-3">
+                        <button type="button" class="btn btn-light btn-lg btn-block c-profile__login-google">
+                          <img class="mr-2" src="https://patrykbialek.github.io/eparki-ui/assets/img/google_logo.png"
+                            alt="google_logo">
+                          <img src="https://patrykbialek.github.io/eparki-ui/assets/img/google_text.png"
+                            alt="google_text">
+                        </button>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <button type="button" class="btn btn-link" id="button-go-to-register">Nie masz konta?
+                        Zarejestruj
+                        się</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="pills-buy-without-login" role="tabpanel"
+                aria-labelledby="pills-my-history-tab">
+                <form class="c-profile__form">
+                  <div class="d-flex flex-column mb-2">
+                    <div>
+                      <div class="form-group">
+                        <label for="email">Adres e-mail</label>
+                        <input type="email" class="form-control" id="email">
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="toggle-invoice-data" value="option1">
+                        <label class="form-check-label" for="toggle-invoice-data">
+                          Akceptuję regulamin serwisu</label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="toggle-invoice-data" value="option2"
+                          checked>
+                        <label class="form-check-label" for="toggle-invoice-data">
+                          Potrzebuję fakturę</label>
+                      </div>
+
+                      <div class="mt-2" id="invoice-data">
+                        <div class="form-group">
+                          <label for="name">Nazwa firmy / Imię i nazwisko</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Ulica, nr budynku, nr lokalu</label>
+                          <input type="text" class="form-control" id="address">
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Kod pocztowy</label>
+                          <input type="text" class="form-control" id="postal-code">
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Miejscowość</label>
+                          <input type="text" class="form-control" id="city">
+                        </div>
+                        <div class="form-group">
+                          <label for="email">NIP (opcjonalnie)</label>
+                          <input type="text" class="form-control" id="nip">
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="mb-3">
+                      <button type="button" class="btn btn-primary btn-lg btn-block">Zapłać (55,00zł)</button>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--// Buy-step end -->

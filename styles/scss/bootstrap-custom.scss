@@ -1,0 +1,236 @@
+/*****************************************
+ * Modal
+ *****************************************/
+
+.modal {
+  &--full {
+    .modal-dialog {
+      max-width: 1140px;
+      max-height: 100%;
+      height: calc(100% - 24px);
+      width: calc(100% - 24px);
+      margin: 12px auto;
+    }
+    .modal-content {
+      height: 100%;
+    }
+    .modal-body {
+      overflow: auto;
+    }
+  }
+}
+
+.modal-header,
+.modal-footer {
+  background-color: #eee;
+}
+
+.modal-header {
+  align-items: center;
+}
+
+.modal-header .close {
+  padding: 0;
+  margin: 0;
+}
+
+.modal-title {
+  font-size: 18px;
+  color: #000;
+}
+
+.modal-content {
+  background-color: #fafafa;
+  border-radius: 4px;
+}
+
+.modal.left.fade .modal-dialog {
+  left: -320px;
+  transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.left.fade.show .modal-dialog {
+  left: 0;
+  width: 90%;
+}
+
+/*****************************************
+ * List
+ *****************************************/
+
+.list-group-item__icon {
+  background: #eee;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  margin-right: 16px !important;
+  font-style: normal;
+
+  img {
+    width: 22px !important;
+  }
+}
+
+.list-group-item {
+  background-color: transparent;
+  color: #000000de;
+
+  align-items: center;
+  display: flex;
+  padding: 12px 0;
+
+  &:hover {
+    background-color: transparent;
+  }
+  .is-checked-item {
+    display: none;
+  }
+  .is-unchecked-item {
+    display: block;
+  }
+
+  &.is-active {
+    .is-checked-item {
+      display: block;
+    }
+    .is-unchecked-item {
+      display: none;
+    }
+  }
+}
+
+/*****************************************
+ * Button
+ *****************************************/
+
+.btn-primary {
+  color: #fff;
+  background-color: #537e37;
+  border-color: #537e37;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: #537e37 !important;
+    border-color: #537e37 !important;
+  }
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-secondary.dropdown-toggle {
+  color: #537e37;
+  background-color: #fafafa;
+  border-color: #537e37;
+}
+
+.btn {
+  font-size: 14px;
+}
+.btn-outline-secondary {
+  color: #616161;
+  border-color: rgba(0, 0, 0, 0.12);
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-outline-secondary:hover {
+  text-decoration: none;
+  color: #616161;
+  background: #eeeeee;
+}
+
+.btn-outline-primary {
+  color: #537e37;
+  border-color: #537e37;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #537e37;
+  border-color: #537e37;
+}
+
+/*****************************************
+ * Nav
+ *****************************************/
+
+.nav {
+  padding-left: 15px;
+}
+
+.navbar-nav {
+  flex-direction: row !important;
+}
+
+.navbar-inner {
+  margin: auto;
+}
+
+.nav-item {
+  padding: 0.5rem 8px;
+  font-size: 14px;
+}
+
+.nav-item:last-child {
+  padding-right: 0;
+}
+
+.nav-link {
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #eeeeee;
+    border-radius: 4px;
+  }
+}
+
+.dropdown-item {
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 48px;
+  height: 48px;
+}
+
+.dropdown-toggle::after {
+  margin-left: 8px;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+}
+.form-check-input {
+  margin-top: 0;
+}
+
+/*****************************************
+ * RWD
+ *****************************************/
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 376px;
+  }
+}
+
+@media (max-width: 575px) {
+  .modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,111 @@
+$yellow-color: #ffff00;
+$white-color: #fff;
+$main-color: $yellow-color;
+$secondary-color: $white-color;
+.t-contrast {
+  * {
+    background-color: #000 !important;
+    color: $main-color !important;
+  }
+
+  .c-app-header .nav-link.active {
+    border: solid 1px $secondary-color;
+    border-radius: 50px;
+    color: $secondary-color !important;
+  }
+  .c-app-header__basket-total {
+    border: solid 1px $main-color;
+  }
+  .c-summary-toggle__inside {
+    background-color: $main-color !important;
+  }
+  .c-ticket-item {
+    border: solid 1px $main-color !important;
+    border-radius: 4px;
+    * {
+      background-color: transparent !important;
+    }
+    &__image {
+      border: solid 1px $main-color;
+    }
+    &__actions .btn {
+      border: solid 1px $secondary-color !important;
+      color: $secondary-color !important;
+    }
+  }
+  .btn.btn-outline-secondary {
+    border: solid 1px $secondary-color;
+    img {
+      background-color: $main-color !important;
+      border-radius: 50%;
+      border: none;
+    }
+  }
+  .c-app-footer__icon {
+    border-radius: 50%;
+    border: solid 1px $main-color;
+
+    svg,
+    img {
+      background-color: $main-color !important;
+    }
+  }
+
+  .c-profile-history__tickets-actions a,
+  .c-profile-history__tickets-actions a img {
+    background-color: $main-color !important;
+  }
+
+  .c-top-actions__more-less-trigger img,
+  .c-filter-button__icon img,
+  .c-filter-button__icon svg,
+  .nav-link__icon img,
+  .nav-link__icon svg {
+    background-color: $main-color !important;
+    border-radius: 50%;
+  }
+  .c-about-park__attractions-image img,
+  .c-about-park__attractions-image {
+    border: solid 1px $main-color !important;
+  }
+
+  .c-top-actions__filters-container .c-filter-button input:checked + label {
+    color: $secondary-color !important;
+    border: solid 1px $secondary-color !important;
+  }
+
+  .c-basket-summary--desktop * {
+    color: $secondary-color !important;
+    .btn {
+      border: solid 1px $secondary-color !important;
+    }
+  }
+
+  .c-about-park__future-events-date {
+    border: solid 1px $main-color !important;
+  }
+
+  .c-app-header__logo-desktop--t-default {
+    display: none !important;
+  }
+  .c-app-header__logo-desktop--t-contrast {
+    display: none !important;
+  }
+  .c-app-header__logo-mobile {
+    display: block !important;
+  }
+}
+
+@media (min-width: 990px) {
+  .t-contrast {
+    .c-app-header__logo-desktop--t-default {
+      display: none !important;
+    }
+    .c-app-header__logo-desktop--t-contrast {
+      display: block !important;
+    }
+    .c-app-header__logo-mobile {
+      display: none !important;
+    }
+  }
+}

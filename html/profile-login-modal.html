@@ -1,0 +1,127 @@
+<!--// Profile login modal -->
+<div class="modal fade" id="profileLoginModal" tabindex="-1" role="dialog" aria-labelledby="profileLoginModal"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="countryRegion">Profil</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <span class="icon-close"></span>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="c-profile mt-0">
+          <section id="form-login">
+            <header class="mb-4">
+              <h1 class="c-section-header">Zaloguj się</h1>
+            </header>
+            <form class="c-profile__form">
+              <div class="row mb-2">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="email">Adres e-mail</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Hasło</label>
+                    <div class="input-group mb-3">
+                      <input type="password" class="form-control" id="password">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">
+                          <span class="icon-visibility_on" style="display: none; color: #9E9E9E"></span>
+                          <span class="icon-visibility_off" style="display: block; color: #9E9E9E"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Zaloguj</button>
+                </div>
+                <div class="col-6 mb-3">
+                  <button type="button" class="btn btn-light btn-lg btn-block c-profile__login-facebook">
+                    <img class="mr-2" src="https://patrykbialek.github.io/eparki-ui/assets/img/facebook_logo.png"
+                      alt="facebook_logo">
+                    <img src="https://patrykbialek.github.io/eparki-ui/assets/img/facebook_text.png"
+                      alt="facebook_text">
+                  </button>
+                </div>
+                <div class="col-6 mb-3">
+                  <button type="button" class="btn btn-light btn-lg btn-block c-profile__login-google">
+                    <img class="mr-2" src="https://patrykbialek.github.io/eparki-ui/assets/img/google_logo.png"
+                      alt="google_logo">
+                    <img src="https://patrykbialek.github.io/eparki-ui/assets/img/google_text.png" alt="google_text">
+                  </button>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                  <button type="button" class="btn btn-link" id="button-go-to-register">Nie masz konta? Zarejestruj
+                    się</button>
+                </div>
+              </div>
+
+            </form>
+          </section>
+          <section class="is-hidden" id="form-register">
+            <header class="mb-4">
+              <h1 class="c-section-header">Zarejestruj się</h1>
+            </header>
+            <form class="c-profile__form">
+              <div class="row mb-2">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="name">Imię i nazwisko</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Adres e-mail</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Hasło</label>
+                    <div class="input-group mb-3">
+                      <input type="password" class="form-control" id="password">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">
+                          <span class="icon-visibility_on" style="display: none; color: #9E9E9E"></span>
+                          <span class="icon-visibility_off" style="display: block; color: #9E9E9E"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Powtórz hasło</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="password" value="moje_haslo">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">
+                          <span class="icon-visibility_on" style="display: block; color: #9E9E9E"></span>
+                          <span class="icon-visibility_off" style="display: none; color: #9E9E9E"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Zarejestruj</button>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                  <button type="button" class="btn btn-link" id="button-go-to-login">Masz już konto? Zaloguj
+                    się</button>
+                </div>
+              </div>
+
+            </form>
+          </section>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--// Profile login modal end -->
